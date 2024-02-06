@@ -325,11 +325,11 @@ Transform:
   m_GameObject: {fileID: 96766781}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.02, y: -3.93, z: 0}
+  m_LocalPosition: {x: 13.716962, y: -4.4916267, z: 4.563695}
   m_LocalScale: {x: 11, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2021588950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &96766783
 Rigidbody2D:
@@ -400,7 +400,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.26666668, g: 0.18039216, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -471,7 +471,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -1.0837198e-10, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0.5633333}
+  m_ConnectedAnchor: {x: 0, y: 0.5633332}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -635,8 +635,8 @@ Transform:
   m_GameObject: {fileID: 142696296}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.84, y: -6.14, z: 0}
-  m_LocalScale: {x: 0.8, y: -0.033039864, z: 0.31167603}
+  m_LocalPosition: {x: -0.84, y: -6.2118, z: 0}
+  m_LocalScale: {x: 0.6909861, y: -0.033039864, z: 0.31167603}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1562493542}
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 419899309}
   - component: {fileID: 419899308}
   m_Layer: 0
-  m_Name: Square (7)
+  m_Name: SkyBoxUp
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -856,7 +856,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 419899307}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f4204cb845baf4e9594c3bd2aa5fbf4a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -979,12 +979,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419899307}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4453, y: 8.2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.8577384, y: 7.6383734, z: 4.563695}
   m_LocalScale: {x: 60.35543, y: -1.2830774, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1698444746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &473836830
 GameObject:
@@ -1480,7 +1480,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.6682916
+  orthographic size: 10.857435
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2095,11 +2095,11 @@ Transform:
   m_GameObject: {fileID: 785101188}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.5664, y: -2.9857, z: 0}
+  m_LocalPosition: {x: 18.263363, y: -3.5473266, z: 4.563695}
   m_LocalScale: {x: 1.5609657, y: 1.2286371, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2021588950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &785101193
 MonoBehaviour:
@@ -2432,7 +2432,7 @@ GameObject:
   - component: {fileID: 919272449}
   - component: {fileID: 919272450}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Skybox Down
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2498,12 +2498,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919272446}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4453, y: -7.2, z: 0}
-  m_LocalScale: {x: 60.102196, y: -1.2830774, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1373, y: -7.7616262, z: 4.563695}
+  m_LocalScale: {x: 59.54094, y: -1.2830774, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1698444746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &919272449
 Rigidbody2D:
@@ -2541,7 +2541,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 919272446}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f4204cb845baf4e9594c3bd2aa5fbf4a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2720,7 +2720,7 @@ GameObject:
   - component: {fileID: 1275853370}
   - component: {fileID: 1275853369}
   m_Layer: 0
-  m_Name: Square (8)
+  m_Name: Skybox Right
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2735,7 +2735,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1275853368}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f4204cb845baf4e9594c3bd2aa5fbf4a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2858,12 +2858,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275853368}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 29.5, y: 0.2, z: 0}
-  m_LocalScale: {x: 15.515284, y: -1.2830774, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 28.196962, y: -0.36162657, z: 4.563695}
+  m_LocalScale: {x: 15.515284, y: -1.2830772, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1698444746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &1343787326
 GameObject:
@@ -2893,11 +2893,11 @@ Transform:
   m_GameObject: {fileID: 1343787326}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.02, y: -5.62, z: 0}
+  m_LocalPosition: {x: 13.716962, y: -6.1816263, z: 4.563695}
   m_LocalScale: {x: 2, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2021588950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1343787328
 Rigidbody2D:
@@ -2968,7 +2968,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.27058825, g: 0.18039216, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2987,7 +2987,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1343787326}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f4204cb845baf4e9594c3bd2aa5fbf4a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3397,8 +3397,8 @@ Transform:
   m_GameObject: {fileID: 1562493541}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 17.857218, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.002, y: 17.86, z: 0}
+  m_LocalScale: {x: 1.0038943, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 142696300}
@@ -3670,7 +3670,7 @@ GameObject:
   - component: {fileID: 1627966858}
   - component: {fileID: 1627966857}
   m_Layer: 0
-  m_Name: Square (6)
+  m_Name: Skybox Left
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3685,7 +3685,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1627966856}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f4204cb845baf4e9594c3bd2aa5fbf4a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3808,13 +3808,48 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627966856}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -29.4, y: 0.2, z: 0}
-  m_LocalScale: {x: 15.515284, y: -1.2830774, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -30.703037, y: -0.36162657, z: 4.563695}
+  m_LocalScale: {x: 15.515284, y: -1.2830772, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1698444746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &1698444745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1698444746}
+  m_Layer: 0
+  m_Name: SkyBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1698444746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698444745}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3030384, y: 0.56162655, z: -4.563695}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 919272448}
+  - {fileID: 1627966860}
+  - {fileID: 1275853372}
+  - {fileID: 419899311}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1734283964
 GameObject:
   m_ObjectHideFlags: 0
@@ -4098,10 +4133,44 @@ Transform:
   m_GameObject: {fileID: 1851582657}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.55, y: -2.279, z: 0}
-  m_LocalScale: {x: 1, y: 7.171175, z: 1}
+  m_LocalPosition: {x: -0.55, y: -2.29861, z: 0}
+  m_LocalScale: {x: 1, y: 7.1311636, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2021588949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2021588950}
+  m_Layer: 0
+  m_Name: Seasaw
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2021588950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021588949}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3030384, y: 0.56162655, z: -4.563695}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 96766782}
+  - {fileID: 1343787327}
+  - {fileID: 785101192}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2090185349
@@ -4257,8 +4326,8 @@ Transform:
   m_GameObject: {fileID: 2090185349}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.84, y: 1.71, z: 0}
-  m_LocalScale: {x: 0.8, y: -0.033039864, z: 0.31167603}
+  m_LocalPosition: {x: -0.856, y: 1.67497, z: 0}
+  m_LocalScale: {x: 0.81580657, y: -0.033039864, z: 0.31167603}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1734283965}
@@ -4269,14 +4338,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 919272448}
-  - {fileID: 419899311}
-  - {fileID: 1627966860}
-  - {fileID: 1275853372}
   - {fileID: 914050460}
-  - {fileID: 96766782}
-  - {fileID: 1343787327}
-  - {fileID: 785101192}
   - {fileID: 263741747}
   - {fileID: 1366263862}
   - {fileID: 507708245}
@@ -4289,3 +4351,5 @@ SceneRoots:
   - {fileID: 142696300}
   - {fileID: 2090185354}
   - {fileID: 657904936}
+  - {fileID: 1698444746}
+  - {fileID: 2021588950}

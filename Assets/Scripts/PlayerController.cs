@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float smallSpeed = 10f;
     public float bigSpeed = 2f;
     public float jumpForce = 10f;
+    private float moveSpeed = 5.0f;
 
     public float bigMass = 30f;
     private Rigidbody2D rb;
@@ -16,31 +17,34 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        GetComponent<SpriteRenderer>().color = Color.green;
     }
 
     void Update()
     {
         // Movement
-        float move = Input.GetAxis("Horizontal");
-        float speed = normalSpeed;
+        float dirX= Input.GetAxis("Horizontal");
+        //float speed = normalSpeed;
+        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+
 
         // Change size and color
-        if (Input.GetMouseButtonDown(0)) { // Left click
+        if (Input.GetKeyDown(KeyCode.W)) { // Left click
             ChangeSize(1.5f);
             GetComponent<SpriteRenderer>().color = Color.red;
             rb.mass= bigMass;
-            speed = bigSpeed;
-        } else if (Input.GetMouseButtonDown(1)) { // Right click
+            moveSpeed = bigSpeed;
+        } else if (Input.GetKeyDown(KeyCode.S)) { // Right click
             ChangeSize(0.5f);
             GetComponent<SpriteRenderer>().color = Color.yellow;
-            speed = smallSpeed;
+            moveSpeed = smallSpeed;
         } else if (Input.GetKeyDown(KeyCode.LeftShift)) {
             ChangeSize(1f);
             GetComponent<SpriteRenderer>().color = Color.green;
-            speed = normalSpeed;
+            moveSpeed = normalSpeed;
         }
 
-        transform.position += new Vector3(move, 0, 0) * speed * Time.deltaTime;
+        //transform.position += new Vector3(moveSpeed, 0, 0) * speed * Time.deltaTime;
 
         // Jump logic
         if (transform.localScale.x == 1f && isGrounded && Input.GetButtonDown("Jump")) {
