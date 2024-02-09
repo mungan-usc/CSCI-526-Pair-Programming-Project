@@ -1,12 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI; // Required for manipulating UI elements
-using UnityEngine.SceneManagement; // Required for scene management
+using TMPro; // Import the TextMeshPro namespace
+using UnityEngine.SceneManagement; // Import the SceneManagement namespace
 
-public class CountdownTimer : MonoBehaviour
+public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 60; // Set this to whatever time limit you want
+    public float timeRemaining = 60; // Set your countdown time in seconds here
     public bool timerIsRunning = false;
-    public Text countdownText; // Assign this in the inspector
+    public TextMeshProUGUI timerText; // Assign your TextMeshProUGUI component here
 
     private void Start()
     {
@@ -29,20 +29,19 @@ public class CountdownTimer : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
 
-                // Here you can add any actions you want to happen when the timer ends
-                // For example, restart the game or load a game over scene
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Restart the current scene
+                // Reload the current scene when the timer ends
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
     }
 
     void DisplayTime(float timeToDisplay)
     {
-        timeToDisplay += 1; // Ensure timer displays correctly
+        timeToDisplay += 1;
 
         float minutes = Mathf.FloorToInt(timeToDisplay / 60); 
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
-        countdownText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        timerText.text = string.Format("{0:00}:{01:00}", minutes, seconds);
     }
 }

@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        GetComponent<SpriteRenderer>().color = Color.green;
         speed = normalSpeed; 
     }
 
@@ -26,12 +27,12 @@ public class PlayerController : MonoBehaviour
 
         float move = Input.GetAxis("Horizontal");
 
-        if (Input.GetMouseButtonDown(0)) { 
+        if (Input.GetKeyDown(KeyCode.W)) { 
             ChangeSize(1.5f);
             GetComponent<SpriteRenderer>().color = Color.red;
             rb.mass = bigMass;
             speed = bigSpeed;
-        } else if (Input.GetMouseButtonDown(1)) {
+        } else if (Input.GetKeyDown(KeyCode.S)) {
             ChangeSize(0.5f);
             GetComponent<SpriteRenderer>().color = Color.yellow;
             speed = smallSpeed;
