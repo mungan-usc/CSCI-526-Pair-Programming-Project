@@ -14,7 +14,7 @@ public class LaserController : MonoBehaviour
         InvokeRepeating("ToggleLaser", 0f, onTime + offTime);
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
         
@@ -24,11 +24,7 @@ public class LaserController : MonoBehaviour
     {
         isLaserOn = !isLaserOn;
 
-        // Enable/disable laser visuals, collider, etc. based on the state
-        // For example:
         gameObject.SetActive(isLaserOn);
 
-        // If using LineRenderer for the laser visuals, you can enable/disable it:
-        // GetComponent<LineRenderer>().enabled = isLaserOn;
     }
 }
